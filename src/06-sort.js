@@ -32,13 +32,13 @@ function sortByArtistNameDescending(songs) {
     const nameA = a.artist.toUpperCase()
     const nameB = b.artist.toUpperCase()
     if (nameA < nameB) {
-      return -1;
-    }
-    if (nameA > nameB) {
       return 1;
     }
+    if (nameA > nameB) {
+      return -1;
+    }
     return 0;
-  }).reverse()
+  })
 }
 
 /**
